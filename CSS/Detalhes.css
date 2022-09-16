@@ -1,0 +1,251 @@
+section:first-child
+{
+    background-image: url("https://acessocultural.com.br/wp-content/uploads/2021/04/filme-rogai-por-nos-1200x675.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    position: relative;
+}
+
+section:first-child::before
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+section:first-child article
+{z-index: 1;}
+
+#poster-filme
+{
+    display: block;
+    height: 240px;
+}
+
+#div-sinopse
+{
+    margin-left: 1em;
+    width: 50vw;
+}
+
+h2
+{font-size: 2em;}
+
+h2 + p
+{font-size: 1.1em;}
+
+#article-btns
+{margin-top: 2em;}
+
+a[class^="bi bi-"]
+{
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    font-size: 1.1em;
+    margin: 0 .5em;
+    padding: .5em 1em;
+    text-align: center;
+    width: 8em;
+}
+
+section
+{padding: 1em;}
+
+h3
+{
+    border-left: 5px solid var(--cor-primaria);
+    font-size: 1.5em;
+    padding-left: .5em;;
+}
+
+.div-elenco
+{
+    align-items: center;
+    background-color: var(--bg-destaque);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* height: 33vh; */
+    justify-content: center;
+    margin-right: 1em;
+    padding: 0 0 2em;
+    width: 15vw;
+}
+
+.div-elenco > img
+{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    margin: 0 1em;
+}
+
+#section-elenco
+{width: 78vw;}
+
+#section-ficha
+{
+    background-color: var(--bg-destaque);
+    border-radius: 10px;
+    position: absolute;
+    top: 50vh;
+    right: 1vw;
+    width: 20vw;
+}
+
+.div-ficha-tecnica
+{margin: 1em;}
+
+h4
+{font-size: 1.1em;}
+
+h5
+{color: rgb(120, 120, 120);}
+
+.p-autor
+{margin: .5em 0;}
+
+@media (max-width: 750px) 
+{
+    section:first-child {height: 50vh;}
+
+    #poster-filme
+    {height: 160px;}  
+    
+    #div-sinopse
+    {width: 100%;}
+
+    h2 {font-size: 1.2em;}
+    h2 + p {font-size: .8em;}
+
+    a[class^="bi bi-"]
+    {
+        font-size: .9em;
+        margin: 0 .5em;
+        padding: .5em;
+        width: 6em;
+    }
+
+    #section-elenco
+    {width: 100%;}
+
+    #section-elenco article
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .div-elenco
+    {
+        margin: .5em;
+        width: 35vw;
+    }
+
+    .div-elenco > img
+    {
+        height: 100px;
+        width: 100px;
+    }
+
+    #section-ficha
+    {
+        background-color: var(--bg-padrao);
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    .div-ficha-tecnica {margin-bottom: 0;}
+
+    .div-ficha-tecnica:nth-of-type(1)
+    {margin-top: 2em;}
+}
+
+@media (min-width: 751px) and (max-width:950px)
+{
+    section:first-child {height: 60vh;}
+
+    #poster-filme
+    {height: 200px;}  
+
+    #div-sinopse
+    {width: 100%;}
+
+    h2 {font-size: 1.4em;}
+    h2 + p {font-size: 1em;}
+
+    a[class^="bi bi-"]
+    {
+        font-size: 1em;
+        margin: 0 .5em;
+        padding: .5em;
+        width: 6em;
+    }
+
+    #section-elenco
+    {width: 70vw;}
+
+    #section-elenco article
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .div-elenco
+    {
+        margin: .5em;
+        width: 25vw;
+    }
+
+    .div-elenco > img
+    {
+        height: 110px;
+        width: 110px;
+    }
+
+    #section-ficha 
+    {
+        top: 70vh;
+        width: 30vw;
+    }
+}
+
+@media (min-width: 951px) and (max-width:1075px)
+{
+    #section-elenco
+    {width: 75vw;} 
+
+    #section-elenco article
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .div-elenco
+    {
+        margin: .5em;
+        width: 30vw;
+    }
+
+    .div-elenco > img
+    {
+        height: 120px;
+        width: 120px;
+    }
+
+    #section-ficha 
+    {
+        top: 70vh;
+        width: 25vw;
+    }
+}

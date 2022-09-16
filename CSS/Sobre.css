@@ -1,0 +1,146 @@
+section:first-child
+{
+    background-image: url("https://s3.amazonaws.com/public-cdn.ibmec.br/portalibmec-content/public/term/course/course_image/banner_-_engenharia_de_computacao-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    position: relative;
+}
+
+section:first-child::before
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+section:first-child article
+{z-index: 1;}
+
+#div-sinopse
+{
+    margin-left: 1em;
+    width: 50vw;
+}
+
+h2
+{font-size: 2em;}
+
+h2 + p
+{font-size: 1.1em;}
+
+section
+{padding: 1em;}
+
+h3
+{
+    border-left: 5px solid var(--cor-primaria);
+    font-size: 1.5em;
+    padding-left: .5em;;
+}
+
+.div-elenco
+{
+    align-items: center;
+    background-color: var(--bg-destaque);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: .5em;
+    padding: 0 0 2em;
+    text-align: center;
+    width: 20vw;
+}
+
+.div-elenco > img
+{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    margin: 0 1em;
+}
+
+.p-autor
+{margin: .5em 0; display: block;}
+
+@media (max-width: 750px) 
+{   
+    section:first-child
+    {height: 50vh;}
+
+    #article-curso img
+    {
+        display: block;
+        height: 110px;
+    }
+
+    #div-sinopse
+    {width: 100%;}
+
+    h2{font-size: 1.3em;}
+    h2 + p {font-size: 1em;}
+    h3{font-size: 1.3em;}
+
+    #section-elenco article
+    {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .div-elenco
+    {
+        justify-content: center;
+        margin-bottom: 1em;
+        width: 45vw;
+        padding-bottom: 1em;
+    }
+
+    .div-elenco > img
+    {
+        height: 80px;
+        width: 80px;
+    }
+
+    .p-autor, .p-autor + p
+    {font-size: .8em;}
+}
+
+@media (min-width:751px) and (max-width: 950px)
+{
+    section:first-child
+    {height: 50vh;}
+
+    #article-curso img
+    {
+        display: block;
+        height: 120px;
+    }
+
+    #div-sinopse
+    {width: 100%;}
+
+    h2{font-size: 1.5em;}
+    h2 + p {font-size: 1em;}
+    h3{font-size: 1.5em;}
+
+    #section-elenco article
+    {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .div-elenco
+    {
+        justify-content: center;
+        margin-bottom: 1em;
+        width: 45vw;
+        padding-bottom: 1em;
+    }
+}

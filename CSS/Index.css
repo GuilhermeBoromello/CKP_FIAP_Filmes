@@ -1,0 +1,109 @@
+header
+{
+    background-image: url("https://br.jetss.com/wp-content/uploads/2021/04/175995912_1190163664748345_3929128919075632408_n.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    position: relative;
+}
+
+header::before
+{
+    background-color: rgba(0, 0, 0, .6);
+    content: "";
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+h2
+{
+    font-size: 3em;
+    width: 40vw;
+}
+
+h3 
+{
+    border-left: 5px solid var(--cor-primaria);
+    font-size: 1.5em;
+    padding-left: .5em;
+}
+
+#div-header-texto
+{
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    padding: 0 2em;
+    z-index: 1;
+}
+
+main
+{padding: 1em;}
+
+.cards
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 1em;
+    width: fit-content;
+}
+
+.cards > img
+{
+    border-radius: 10px;
+    display: block;
+    height: 240px;
+}
+
+.btn-detalhes
+{
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+
+.titulo-filme
+{margin: 5px;}
+
+@media (max-width: 550px) 
+{
+    header
+    {width: 100vw;}
+
+    h2 
+    {
+        font-size: 1.4em;
+        width: fit-content;
+    }    
+
+    #article-filmes
+    {
+        overflow: auto;
+    }
+
+}
+
+@media (min-width:551px) and (max-width: 900px)
+{    
+    #article-filmes
+    {
+        flex-wrap: wrap;
+    }
+
+    h2
+    {width: fit-content;}
+
+    .cards
+    {
+        margin-top: 1em;
+    }
+}
